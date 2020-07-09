@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de autos</title>
+    <link rel="stylesheet" href="estilos2.css" media="screen"/>
 </head>
 <body>
     <form action="">
         <h1>Registro de autos</h1>
-        <input type="text" name="ID_coche" placeholder="ID coche">
-        <select name="ID_movidoa">
+        <input type="text" name="modelo" placeholder="Modelo" id="modelo">
+        <input type="text" name="anio" placeholder="Año" id="año">
+        <a>Usuario: </a><select name="ID_usr">
+            <option value="000000">Usuario1</option>
+            <option value="000001">Usuario2</option>
+            <option value="000002">Usuario3</option>
+        </select>
+        <p>Tipo de combustible: <select name="ID_movidoa">
             <option value="001">Diesel</option>
             <option value="002">Corriente</option>
             <option value="003">Premium</option>
             <option value="004">Gas</option>
-        </select>
-        <select name="ID_tipocoche">
+        </select></p>
+        <p>Tipo de coche: <select name="ID_tipocoche">
             <option value="001">Familiar</option>
             <option value="002">Todoterreno</option>
             <option value="003">Cupé</option>
             <option value="004">Sedán</option>
             <option value="005">Cabriolet</option>
-        </select>
-        <select name="ID_estado">
+        </select></p>
+        <p>Estado del coche: <select name="ID_estado">
             <option value="001">Nuevo</option>
             <option value="002">Usado</option>
-        </select>
-        <select name="ID_marca">
+        </select></p>
+        <p>Marca: <select name="ID_marca">
             <option value="001">Audi</option>
             <option value="002">BMW</option>
             <option value="003">Bugatti</option>
@@ -44,24 +51,17 @@
             <option value="015">Toyota</option>
             <option value="016">Renault</option>
             <option value="017">Tesla</option>
-        </select>
-        <select name="ID_usr">
-            <option value="000000">Usuario1</option>
-            <option value="000001">Usuario2</option>
-            <option value="000002">Usuario3</option>
-        </select>
-        <input type="text" name="modelo" placeholder="Modelo">
-        <input type="text" name="anio" placeholder="Año">
-        <textarea name="detalle" placeholder="Detalles"></textarea>
-        <input type="text" name="caja" placeholder="Caja">
-        <input type="text" name="motor" placeholder="Motor">
-        <input type="date" name="fechapub" placeholder="Fecha Publicación">
-        <input type="text" name="precio" placeholder="Precio">
-        <input type="text" name="moneda" placeholder="Moneda">
-        <textarea name="cc_pic01" placeholder="Descripción del carro"></textarea>
-        <textarea name="cc_pic02" placeholder="Descripción del carro"></textarea>
-        <textarea name="cc_pic03" placeholder="Descripción del carro"></textarea>
-        <textarea name="cc_destac" placeholder="Descripción del carro"></textarea>
+        </select></p>
+        <textarea name="detalle" placeholder="Detalles"></textarea><br>
+        <input type="text" name="caja" placeholder="Caja"><br>
+        <input type="text" name="motor" placeholder="Motor"><br>
+        <input type="date" name="fechapub" placeholder="Fecha Publicación"><br>
+        <input type="text" name="precio" placeholder="Precio"><br>
+        <input type="text" name="moneda" placeholder="Moneda"><br>
+        <p>Descripcion 1</p><textarea name="cc_pic01" placeholder="Descripción del carro"></textarea>
+        <p>Descripcion 2</p><textarea name="cc_pic02" placeholder="Descripción del carro"></textarea>
+        <p>Descripcion 3</p><textarea name="cc_pic03" placeholder="Descripción del carro"></textarea>
+        <p>Destacado</p><textarea name="cc_destac" placeholder="SI" id="destacado"></textarea><br>
         <input type="button" value="ENVIAR" id="boton">
     </form>
 </body>

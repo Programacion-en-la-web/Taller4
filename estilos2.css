@@ -1,0 +1,84 @@
+body {
+    background: url(Imagenes/fondo_carretera.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+form {
+    width: 600px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: snow;
+    margin: 0;
+    font-weight: 500;
+}
+
+a {
+    color: white;
+}
+
+input {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+#modelo {
+    width: 30%;
+}
+
+#año {
+    width: 30%;
+}
+
+select {
+    width: 20%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+#boton {
+    background-color: #003333;
+    color: snow;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+#boton:hover {
+    cursor:pointer;
+}
+
+textarea {
+    max-height: 100px;
+    width: 60%;
+    height: 100px;
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+#destacado {
+    width: 20px;
+    height: 18px;
+}
